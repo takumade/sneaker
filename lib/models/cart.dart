@@ -53,10 +53,29 @@ class Cart {
         imagePath: "lib/images/pegasus-trail-4-gore.png"
       ),
 
-
-
-
-
   ];
+
+
+  List<Shoe> userCart = [];
+
+
+  List<Shoe> getShoeList  () {
+    return shoeShop;
+  }
+
+
+  List<Shoe> getUserCart  () {
+    return shoeShop;
+  }
+
+
+void addItemToCart(Shoe value){
+  userCart.add(value);
+}
+  
+
+  void removeItemFromCart(Shoe value){
+  userCart.remove(value);
+}
 
 }
