@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sneaker/components/bottom_nav_bar.dart';
+import 'package:sneaker/pages/cart_page.dart';
+import 'package:sneaker/pages/shop_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -17,6 +19,11 @@ class _HomePageState extends State<HomePage> {
         _selectedIndex = value;
       });
   }
+
+  final List<Widget> _pages = [
+    const  ShopPage(),
+    const CartPage()
+  ];
 
 
   @override
