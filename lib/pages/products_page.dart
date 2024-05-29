@@ -93,7 +93,7 @@ class _ProductsState extends State<Products> {
                 itemBuilder:(context, index) {
                   Shoe individualShoe = value.getShoeList()[index];
       
-                  return ShoeGridTile(shoe: individualShoe, onTap: () => addShoeToCart);
+                  return ShoeGridTile(shoe: individualShoe, onTap: () => addShoeToCart(individualShoe));
               },))
             ],
           ),),
