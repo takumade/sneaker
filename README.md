@@ -20,20 +20,20 @@ Allow you to buy sneakers. Created using Flutter
 
 ## 💪🏼 Getting Started
 
-# Clone the project and cd into it
+### Clone the project and cd into it
 
 ```bash
 git clone https://github.com/takumade/sneaker
 cd ./sneaker
 ```
 
-# Install dependencies
+### Install dependencies
 
 ```bash
 flutter pub get
 ```
 
-# Run
+### Run
 
 ```bash
 flutter run
