@@ -21,10 +21,7 @@ class _HomePageState extends State<HomePage> {
       });
   }
 
-  final List<Widget> _pages = [
-    const  ShopPage(),
-    const CartPage()
-  ];
+
 
 
   @override
@@ -48,7 +45,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       drawer: const AppDrawer(),
-      body: _pages[_selectedIndex],
+      body: pagesList[_selectedIndex],
     );
   }
 }
