@@ -18,6 +18,7 @@ class _CartPageState extends State<CartPage> {
       builder:(context, value, child) => Padding(
         padding: EdgeInsets.symmetric(horizontal: 25),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
 
             const Text("My Cart",
@@ -25,7 +26,7 @@ class _CartPageState extends State<CartPage> {
               
             ),
 
-            const SizedBox(height: 10,),
+            const SizedBox(height: 25,),
 
             Expanded(child: 
             
