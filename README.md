@@ -1,16 +1,47 @@
-# sneaker
+# Sneaker App
 
-A new Flutter project.
+Allow you to buy sneakers. Created using Flutter
 
-## Getting Started
+## 👨‍💻 Stack
 
-This project is a starting point for a Flutter application.
+- Framework: Flutter
+- State Management: Provider
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🧬 Samples
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| Intro Screen | Shop Screen | Cart Screen |
+|---------|---------|---------|
+|    ![Home Screen](./mockups/m1.png)     | ![Details Screen](./mockups/m2.png)        |  ![Cart Screen](./mockups/m3.png)       |   
+
+
+## 💪🏼 Getting Started
+
+# Clone the project and cd into it
+
+```bash
+git clone https://github.com/takumade/sneaker
+cd ./sneaker
+```
+
+# Install dependencies
+
+```bash
+flutter pub get
+```
+
+# Run
+
+```bash
+flutter run
+```
+
+## 🌻 Motivation
+
+I am relearning Flutter, so I am practising......
+
+## 🔗 Links
+
+Special thanks to these people...
+
+- [Mich Koko](https://github.com/mitchkoko)
