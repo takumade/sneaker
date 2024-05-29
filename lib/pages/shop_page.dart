@@ -78,6 +78,8 @@ class _ShopPageState extends State<ShopPage> {
                     onTap: () => addShoeToCart(shoe),
                   );
                 })),
+
+              
     
       ],
     ));

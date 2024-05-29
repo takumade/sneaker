@@ -36,7 +36,7 @@ class Cart extends ChangeNotifier {
       Shoe(
         name: "Dunk Low Retro",
         price: '115',
-        description: "TRecognizing the Dunk's roots as the top-ranking college team sneaker, the 'Be True To Your School',",
+        description: "TRecognizing the Dunk's roots as the top-ranking college team sneaker",
         imagePath: "lib/images/dunk-low-retro.png"
       ),
 
