@@ -45,7 +45,7 @@ class _ProductsPageState extends State<ProductsPage> {
           }
         ),
       ),
-      body: _selectedIndex == 2 ? Products() :  pagesList[_selectedIndex]
+      body: _selectedIndex == 2 ? const Products() :  pagesList[_selectedIndex]
     );
   }
 }
@@ -59,11 +59,23 @@ class Products extends StatefulWidget {
 }
 
 class _ProductsState extends State<Products> {
+
+  void addShoeToCart(Shoe shoe) {
+    Provider.of<Cart>(context, listen: false).addItemToCart(shoe);
+
+    // alert the user
+    showDialog(context: context, builder: (context) => const AlertDialog(
+      title: Text("Successfully Added") ,
+      content: Text("Check your cart"),
+    ) );
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Consumer<Cart>(
         builder:(context, value, child) => Padding(
-          padding: EdgeInsets.symmetric(horizontal: 25),
+          padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 12),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -73,17 +85,15 @@ class _ProductsState extends State<Products> {
                 
               ),
       
-              const SizedBox(height: 25,),
-      
               Expanded(child: 
               
               GridView.builder(
                 itemCount: value.getShoeList().length,
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
                 itemBuilder:(context, index) {
                   Shoe individualShoe = value.getShoeList()[index];
       
-                  return ShoeGridTile(shoe: individualShoe, onTap: (){});
+                  return ShoeGridTile(shoe: individualShoe, onTap: () => addShoeToCart);
               },))
             ],
           ),),
