@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:sneaker/models/shoe.dart';
 
 class ShoeTile extends StatelessWidget {
@@ -17,7 +18,25 @@ class ShoeTile extends StatelessWidget {
       child: Column(
         children: [
         
-        Image.asset(shoe.imagePath)
+        ClipRRect(
+          borderRadius: BorderRadius.circular(12),
+          child: Image.asset(shoe.imagePath)),
+
+          Text(shoe.description, style: TextStyle(color: Colors.grey[600])),
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+
+              Column(
+                children: [
+                  Text(shoe.name),
+                  Text(shoe.price)
+                ]
+              ),
+              Icon(Icons.add)
+            ],
+          )
         ],
       ),
 
