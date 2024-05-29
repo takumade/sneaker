@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:sneaker/components/shoe_tile.dart';
 import 'package:sneaker/models/cart.dart';
 import 'package:sneaker/models/shoe.dart';
 // ignore: depend_on_referenced_packages
 import 'package:provider/provider.dart';
+import 'package:sneaker/pages/products_page.dart';
 
 
 class ShopPage extends StatefulWidget {
@@ -48,18 +50,22 @@ class _ShopPageState extends State<ShopPage> {
           child: Text("Everyone flies... some fly longer than others",
               style: TextStyle(color: Colors.grey[600])),
         ),
-        const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 25),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 25),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              Text('Hot Picks 🔥',
+              const Text('Hot Picks 🔥',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24)),
-              Text(
-                "See All",
-                style:
-                    TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
+              GestureDetector(
+                onTap: () =>  Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const ProductsPage())),
+                child: const Text(
+                  "See All",
+                  style:
+                      TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
+                ),
               )
             ],
           ),
