@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:sneaker/pages/home_page.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});
