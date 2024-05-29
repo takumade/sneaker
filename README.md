@@ -10,10 +10,13 @@ Allow you to buy sneakers. Created using Flutter
 
 ## 🧬 Samples
 
-| Intro Screen | Shop Screen | Cart Screen |
+| Intro Screen | Shop Screen | All Products |
 |---------|---------|---------|
-|    ![Home Screen](./mockups/m1.png)     | ![Details Screen](./mockups/m2.png)        |  ![Cart Screen](./mockups/m3.png)       |   
+|    ![Intro Screen](./mockups/m1.png)     | ![Shop Screen](./mockups/m2.png)        |  ![All Products Screen](./mockups/m3.png)       |   
 
+| Cart Screen | Drawer | 
+|---------|---------|
+|    ![Intro Screen](./mockups/m4.png)     | ![Shop Screen](./mockups/m5.png)        |  
 
 ## 💪🏼 Getting Started
 
