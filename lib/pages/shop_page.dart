@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:sneaker/components/shoe_tile.dart';
+import 'package:sneaker/models/cart.dart';
 import 'package:sneaker/models/shoe.dart';
+import 'package:provider/provider.dart';
+
 
 class ShopPage extends StatefulWidget {
   const ShopPage({super.key});
@@ -12,7 +15,7 @@ class ShopPage extends StatefulWidget {
 class _ShopPageState extends State<ShopPage> {
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Consumer<Cart>(builder: (context, value, child) => Column(
       children: [
         Container(
           padding: const EdgeInsetsDirectional.all(12),
@@ -68,6 +71,6 @@ class _ShopPageState extends State<ShopPage> {
         const Padding(padding: EdgeInsets.only(top: 25, left: 25, right: 25), 
         child: Divider(color: Colors.transparent)),
       ],
-    );
+    ));
   }
 }
