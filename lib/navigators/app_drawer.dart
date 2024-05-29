@@ -16,12 +16,13 @@ class AppDrawer extends StatelessWidget {
         children: [
           Column(
             children: [
-              DrawerHeader(
-            decoration: const BoxDecoration(
-        color: Colors.transparent
-    ),
-            child: Image.asset("lib/images/nike.png", color: Colors.white,),
-          ),
+            
+
+          Container(
+          height: 200,
+          padding: const EdgeInsets.only(top: 25),
+          child: Image.asset("lib/images/nike.png", color: Colors.white),
+        ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25),
             child: Divider(
