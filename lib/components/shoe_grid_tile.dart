@@ -11,8 +11,8 @@ class ShoeGridTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(left: 25, top: 25),
-      width: 340,
+      margin:  EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+    
       decoration: BoxDecoration(
           color: Colors.grey[100], borderRadius: BorderRadius.circular(12)),
       child: Stack(
@@ -23,7 +23,7 @@ class ShoeGridTile extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
               child: Image.asset(shoe.imagePath)),
           Padding(
-            padding: const EdgeInsets.only(left: 2),
+            padding: const EdgeInsets.only(left: 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,7 +63,7 @@ class ShoeGridTile extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 SizedBox(
-                                  width: 134,
+                                  width: 140,
                                   child: Text(shoe.name, 
                                   overflow: TextOverflow.ellipsis,
                                   style: const TextStyle(
