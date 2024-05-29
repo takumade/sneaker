@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sneaker/components/shoe_tile.dart';
 
 class ShopPage extends StatefulWidget {
   const ShopPage({super.key});
