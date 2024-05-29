@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
         elevation: 0,
         leading: Builder(builder: (context) {
             return IconButton(
-              icon: Icon(Icons.menu), 
+              icon: const Icon(Icons.menu), 
               color: Colors.black,
               onPressed: (){
                 Scaffold.of(context).openDrawer();
@@ -66,16 +66,16 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
 
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 25),
               child: ListTile(
                 leading: Icon(Icons.home, color: Colors.white,),
                 title: Text("Home", style: TextStyle(color: Colors.white,),),
               ),
             ),
 
-              Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25),
+              const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 25),
               child: ListTile(
                 leading: Icon(Icons.info, color: Colors.white,),
                 title: Text("About", style: TextStyle(color: Colors.white,),),
@@ -87,8 +87,8 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
 
-             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25),
+             const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 25),
               child: ListTile(
                 leading: Icon(Icons.logout_rounded, color: Colors.white,),
                 title: Text("Logout", style: TextStyle(color: Colors.white,),),
