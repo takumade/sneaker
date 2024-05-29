@@ -8,14 +8,14 @@ class Cart extends ChangeNotifier {
       Shoe(
         name: "Air Jordan 1 (low)",
         price: '140',
-        description: "TThe Air Jordan 1 Low OG remakes the classic sneaker with new colors and textures.",
+        description: "The Air Jordan 1 Low OG remakes the classic sneaker with new colors and textures.",
         imagePath: "lib/images/air-jordan-1-low.png"
       ),
 
       Shoe(
         name: "Air Jordan 1 (high)",
         price: '180',
-        description: "TThis iteration of the AJ1 reimagines Mike's first signature model with a fresh mix of colors.",
+        description: "This iteration of the AJ1 reimagines Mike's first signature model with a fresh mix of colors.",
         imagePath: "lib/images/air-jordan-i-high.png"
       ),
 
@@ -36,7 +36,7 @@ class Cart extends ChangeNotifier {
       Shoe(
         name: "Dunk Low Retro",
         price: '115',
-        description: "TRecognizing the Dunk's roots as the top-ranking college team sneaker, the 'Be True To Your School' pack looks to the original ad campaign for inspiration",
+        description: "TRecognizing the Dunk's roots as the top-ranking college team sneaker, the 'Be True To Your School',",
         imagePath: "lib/images/dunk-low-retro.png"
       ),
 

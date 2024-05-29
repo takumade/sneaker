@@ -56,20 +56,15 @@ class _ShopPageState extends State<ShopPage> {
         ),
         Expanded(
             child: ListView.builder(
-                itemCount: 4,
+                itemCount: value.getShoeList().length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  Shoe shoe = Shoe(
-                      name: "Air Jordan",
-                      price: '248',
-                      description: "Cool shoe",
-                      imagePath: "lib/images/air-jordan-1-low.png");
+                  Shoe shoe = value.getShoeList()[index];
                   return ShoeTile(
                     shoe: shoe,
                   );
                 })),
-        const Padding(padding: EdgeInsets.only(top: 25, left: 25, right: 25), 
-        child: Divider(color: Colors.transparent)),
+    
       ],
     ));
   }
