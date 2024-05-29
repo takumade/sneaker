@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sneaker/components/shoe_tile.dart';
 import 'package:sneaker/models/cart.dart';
 import 'package:sneaker/models/shoe.dart';
+// ignore: depend_on_referenced_packages
 import 'package:provider/provider.dart';
 
 
@@ -18,7 +19,7 @@ class _ShopPageState extends State<ShopPage> {
     Provider.of<Cart>(context, listen: false).addItemToCart(shoe);
 
     // alert the user
-    showDialog(context: context, builder: (context) => AlertDialog(
+    showDialog(context: context, builder: (context) => const AlertDialog(
       title: Text("Successfully Added") ,
       content: Text("Check your cart"),
     ) );
