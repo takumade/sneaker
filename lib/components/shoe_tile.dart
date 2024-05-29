@@ -16,6 +16,7 @@ class ShoeTile extends StatelessWidget {
         borderRadius: BorderRadius.circular(12)
       ),
       child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
         
         ClipRRect(
@@ -24,18 +25,37 @@ class ShoeTile extends StatelessWidget {
 
           Text(shoe.description, style: TextStyle(color: Colors.grey[600])),
 
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-
-              Column(
-                children: [
-                  Text(shoe.name),
-                  Text(shoe.price)
-                ]
-              ),
-              Icon(Icons.add)
-            ],
+          Padding(
+            padding: const EdgeInsets.only(left: 25),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+            
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(shoe.name, 
+                    style: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20
+                    )),
+                    const SizedBox(height: 5,),
+                    Text('\$' + shoe.price, style: TextStyle(color: Colors.grey),)
+                  ]
+                ),
+                Container(
+                  padding: EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(12),
+                      bottomRight: Radius.circular(12)
+                    )
+                  ),
+                  child: Icon(Icons.add, color: Colors.white,))
+              ],
+            ),
           )
         ],
       ),
