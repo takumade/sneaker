@@ -15,11 +15,11 @@ class _ShopPageState extends State<ShopPage> {
     return Column(
       children: [
         Container(
-          padding: EdgeInsetsDirectional.all(12),
-          margin: EdgeInsets.symmetric(horizontal: 25),
+          padding: const EdgeInsetsDirectional.all(12),
+          margin: const EdgeInsets.symmetric(horizontal: 25),
           decoration: BoxDecoration(
               color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
-          child: Row(
+          child: const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text("Search", style: TextStyle(color: Colors.grey)),
@@ -32,8 +32,8 @@ class _ShopPageState extends State<ShopPage> {
           child: Text("Everyone flies... some fly longer than others",
               style: TextStyle(color: Colors.grey[600])),
         ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 25),
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 25),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.end,
