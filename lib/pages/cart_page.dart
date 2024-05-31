@@ -17,7 +17,7 @@ class _CartPageState extends State<CartPage> {
   Widget build(BuildContext context) {
     return Consumer<Cart>(
       builder:(context, value, child) => Padding(
-        padding: EdgeInsets.symmetric(horizontal: 25),
+        padding: const EdgeInsets.symmetric(horizontal: 25),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -29,14 +29,10 @@ class _CartPageState extends State<CartPage> {
 
             const SizedBox(height: 25,),
 
-            Expanded(child: value.getUserCart().isEmpty ? Center(child: Column(
+            Expanded(child: value.getUserCart().isEmpty ? const Center(child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Your cart is empty"),
-
-                ElevatedButton.icon(onPressed: (){
-                    Navigator.push(context, 
-                    MaterialPageRoute(builder:(context) => ShopPage() ));
-                }, icon: Icon(Icons.shopping_bag), label: Text("Add products"))
+                Text("Your cart is empty.", style: TextStyle(fontSize: 14),),
               ],
             )) :   ListView.builder(
               itemCount: value.getUserCart().length,
