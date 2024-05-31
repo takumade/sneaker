@@ -28,9 +28,7 @@ class _CartPageState extends State<CartPage> {
 
             const SizedBox(height: 25,),
 
-            Expanded(child: 
-            
-            ListView.builder(
+            Expanded(child: value.getUserCart().isEmpty ? Text("Your cart is empty") :   ListView.builder(
               itemCount: value.getUserCart().length,
               itemBuilder:(context, index) {
                 Shoe individualShoe = value.getUserCart()[index];
