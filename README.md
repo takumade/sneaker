@@ -1,6 +1,6 @@
 # Sneaker App
 
-Allow you to buy sneakers. Created using Flutter
+This mobile app allows users to browse and purchase sneakers. Built with Flutter, it offers a smooth and responsive interface for an enjoyable shopping experience. Users can explore styles, view details, add to cart, and securely checkout.
 
 ## 👨‍💻 Stack
 
